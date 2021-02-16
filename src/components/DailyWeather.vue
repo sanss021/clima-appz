@@ -47,28 +47,28 @@ export default {
 
 <style lang="css" scoped>
 .container {
-    margin-top: 2rem;
-    padding: 2rem;
+    margin-top: 32px;
+    padding: 32px;
     height: 100%;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
-    min-width: 10rem;
+    min-width: 160px;
 }
 .container *:not(:first-child) {
-    margin-top: 0.5rem;
+    margin-top: 8px;
 }
 .icon {
-    font-size: 3rem;
+    font-size: 48px;
 }
 .day {
-    font-size: 1.5rem;
+    font-size: 24px;
     font-weight: 100;
     text-transform: uppercase;
 }
 .main {
-    font-size: 1.1rem;
+    font-size: 17.6px;
     font-weight: 300;
     text-transform: uppercase;
 }

@@ -31,3 +31,55 @@ body {
 html {
   font-size: 16px;
 }
+
+@media only screen and (max-width: 950px) {
+  html {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  html {
+    font-size: 13px;
+  }
+
+  /* Carousel to list */
+  #left, #right {
+    display: none;
+  }
+  .carousel {
+    width: 43.5rem;
+  }
+  .carousel-items {
+      max-width: 20rem;
+      margin: 0 auto;
+      display: grid;
+      grid-gap: 1rem;
+      flex-direction: column;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  html {
+    font-size: 11px;
+  }
+}
+
+@media only screen and (max-width: 630px) {
+  html {
+    font-size: 10px;
+  }
+}

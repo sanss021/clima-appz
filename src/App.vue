@@ -98,7 +98,7 @@ export default {
 }
 .carousel {
   position: relative;
-  width: 43.5rem;
+  width: 696px;
 }
 .carousel-outer {
   overflow: hidden;
@@ -111,19 +111,19 @@ export default {
   justify-content: flex-start;
 }
 .carousel-items *:not(:first-child) {
-  margin-left: 0.5rem;
+  margin-left: 8px;
 }
 .button-container {
   display: flex;
   justify-content: space-between;
 }
 .btn {
-  width: 3rem;
-  height: 3rem;
+  width: 48px;
+  height: 48px;
   border-radius: 50%;
   color: #fefefe;
   position: absolute;
-  top: 9rem;
+  top: 144px;
   z-index: 100;
 }
 .btn:hover {
@@ -134,16 +134,15 @@ export default {
   background: rgba(255, 255, 255, 0.4);
 }
 #left {
-  left: -1.5rem;
+  left: -24px;
 }
 #right {
-  right: -1.5rem;
+  right: -24px;
 }
 
 footer {
-  position: absolute;
-  bottom: 0;
   height: 2.5rem;
+  margin-top: 1rem;
 }
 
 footer p a {
