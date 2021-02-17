@@ -113,6 +113,33 @@ export default {
 .carousel-items *:not(:first-child) {
   margin-left: 8px;
 }
+
+@media only screen and (max-width: 800px) {
+  .carousel {
+    width: 100%;
+  }
+  .carousel-items * {
+    margin: 5px
+  }
+  /* Carousel to list */
+  #left, #right {
+    display: none;
+  }
+  .carousel-outer {
+    width: 100%;
+  }
+  .carousel-items {
+    transform: translateX(0);
+      width: 100%;
+      margin: 10px auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      max-width: 1000px;
+  }
+}
+
 .button-container {
   display: flex;
   justify-content: space-between;
