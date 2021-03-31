@@ -30,16 +30,16 @@ export default {
         }
     },
     methods: {
-        /* ON SATURDAY, LAST DAILY IS BUGGED - NO DAY NAME */
         getDay() {
             if(this.index === 0) {
                 return 'Today'
             }else if(this.index === 1) {
                 return 'Tomorrow'
-            }else if(this.timeData + this.index >= 6){
-                return this.days[this.timeData + this.index - 6]    
+            }else if(this.timeData + this.index < this.days.length) {
+                return this.days[this.timeData + this.index]
+            }else{
+                return this.days[this.timeData + this.index - this.days.length]
             }
-            return this.days[this.timeData + this.index]
         }
     }
 }
@@ -71,5 +71,51 @@ export default {
     font-size: 17.6px;
     font-weight: 300;
     text-transform: uppercase;
+}
+.temp {
+    font-size: 16px;
+}
+
+@media only screen and (max-width: 525px) {
+.container {
+    min-width: 128px;
+}
+.icon {
+      font-size: 38.4px;
+}
+.day {
+    font-size: 19.2px;
+}
+.main {
+    font-size: 14.08px;
+}
+.temp {
+    font-size: 12.8px;
+}
+
+@media only screen and (max-width: 470px) {
+.container {
+    min-width: 102.4px;
+}
+.icon {
+      font-size: 30.72px;
+}
+.day {
+    font-size: 15.36px;
+}
+.main {
+    font-size: 11.264px;
+}
+.temp {
+    font-size: 10.24px;
+}
+}
+
+@media only screen and (max-width: 420px) {
+  .container {
+      min-width: 250px;
+  }
+}
+
 }
 </style>

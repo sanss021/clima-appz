@@ -1,4 +1,10 @@
 <template>
+<div class="video-container">
+  <div class="gradient"></div>
+  <video autoplay loop muted>
+    <source src="./assets/sunset_backgorund_video.mp4" type="video/mp4">
+  </video>
+</div>
 <div class="global-container">
   <Location :api_key="API_KEY" :fetchWeather="fetchWeather"/>
   <CurrentWeather :data="currentData" :getIcon="getIcon" />
@@ -12,7 +18,7 @@
     </div>
   </div>
   <footer>
-    <p>Background was <a href="http://www.freepik.com">designed by pikisuperstar / Freepik</a></p>
+    <p>Background was designed by <a href="https://www.youtube.com/watch?v=XGw3OgCBo_U">Visualdon</a></p>
   </footer>
 </div>
 </template>
@@ -34,6 +40,9 @@ export default {
   },
   created() {
     this.fetchWeather(this.LAT, this.LON)
+    window.addEventListener('resize', function() {
+      this.document.querySelector(".carousel-items").style.transform = "translateX(0)"
+    })
   },
   data() {
     return {
@@ -82,7 +91,7 @@ export default {
         this.idx = this.dailyData.length - 3
       }
 
-      document.getElementById('items').style.transform = `translateX(${-this.idx * 14.625}rem)`
+      document.getElementById('items').style.transform = `translateX(${-this.idx * 234}px)`
     },
     convertTZ(date, tzString) {
       return new Date((typeof date === "string" ? new Date(date) : date).toLocaleString('en-US', {timeZone: tzString}))
@@ -129,7 +138,6 @@ export default {
     width: 100%;
   }
   .carousel-items {
-    transform: translateX(0);
       width: 100%;
       margin: 10px auto;
       display: flex;
@@ -169,7 +177,12 @@ export default {
 
 footer {
   height: 2.5rem;
+  width: 100%;
   margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
 }
 
 footer p a {
