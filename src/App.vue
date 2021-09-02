@@ -2,7 +2,7 @@
 <div class="video-container">
   <div class="gradient"></div>
   <video autoplay loop muted>
-    <source src="./assets/sunset_backgorund_video.mp4" type="video/mp4">
+    <source src="./assets/" type="video/mp4">
   </video>
 </div>
 <div class="global-container">
@@ -18,9 +18,10 @@
     </div>
   </div>
   <footer>
-    <p>Background was designed by <a href="https://www.youtube.com/watch?v=XGw3OgCBo_U">Visualdon</a></p>
+    <p>Clima Appz<a href=""></a></p>
   </footer>
 </div>
+
 </template>
 
 <script>

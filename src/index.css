@@ -1,7 +1,7 @@
 /*@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;700&display=swap');*/
 body {
   font-family: 'Montserrat', sans-serif;
-  background: rgb(56, 56, 56);
+  background: rgb(0, 163, 63);
   width: 100vw;
   overflow-x: hidden;
   color: #fff;
@@ -41,7 +41,7 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(34, 233, 7, 0.6);
   z-index: -1;
 }
 
