@@ -26,15 +26,15 @@ export default {
     },
     data() {
         return {
-            days: ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
+            days: ['Domingo', 'Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sábado'],
         }
     },
     methods: {
         getDay() {
             if(this.index === 0) {
-                return 'Today'
+                return 'Hoje'
             }else if(this.index === 1) {
-                return 'Tomorrow'
+                return 'Amanhã'
             }else if(this.timeData + this.index < this.days.length) {
                 return this.days[this.timeData + this.index]
             }else{
