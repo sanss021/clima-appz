@@ -2,11 +2,9 @@
 Single page application com Vue, utilizando a API do Open Weather Map, para informar o tempo e temperatura (em graus celsius) atuais e a previsão dos próximos 7 dias de uma cidade, a ser informada pelo usuário. Idealmente incluindo a representação do tempo com ícones.
 
 Etapa 1):
-Criar novo projeto com Vue Cli
-
-Criar uma conta no  Open Weather Map, 
-
-*Ativar a chave da API 
+Criar novo projeto com Vue Cli;
+Criar uma conta no  Open Weather Map;
+Ativar a chave da API;
 
 Fazer barra de pesquisa e ajustar imagem de fundo
 
