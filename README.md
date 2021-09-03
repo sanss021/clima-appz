@@ -15,7 +15,7 @@ Estilizar dados meteorológicos;
 
 Acessando e mostrando dados meteorológicos da API;
 
-Mostrar a data e alterar a imagem de fundo de acordo com temperatura;
+Mostrar a data;
 
 Etapa 2):
 
