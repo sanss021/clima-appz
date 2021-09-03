@@ -15,7 +15,7 @@ Estilizar dados meteorológicos;
 
 Acessando e mostrando dados meteorológicos da API;
 
-Mostrar a data;
+Mostrar a data
 
 Etapa 2):
 
