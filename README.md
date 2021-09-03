@@ -1,6 +1,7 @@
 # clima-appz
 Single page application com Vue, utilizando a API do Open Weather Map, para informar o tempo e temperatura (em graus celsius) atuais e a previsão dos próximos 7 dias de uma cidade, a ser informada pelo usuário. Idealmente incluindo a representação do tempo com ícones.
 
+<<<<<<< HEAD
 Etapa 1) :
 Criar novo projeto com Vue Cli
 Criar uma conta no  Open Weather Map, 
@@ -16,13 +17,45 @@ Definir os componentes Vue
 Importar o Axios para consumir APIs
 Definir o data() Vue
 Definir o methods Vue
+=======
+Etapa 1):
+
+Criar novo projeto com Vue Cli;
+
+Criar uma conta no  Open Weather Map;
+
+Ativar a chave da API;
+
+Fazer barra de pesquisa e ajustar imagem de fundo;
+
+Estilizar dados meteorológicos;
+
+Acessando e mostrando dados meteorológicos da API;
+
+Mostrar a data
+
+Etapa 2):
+
+Definir os componentes Vue;
+
+Importar o Axios para consumir APIs;
+
+Definir o data() Vue;
+
+Definir o methods Vue;
+
+>>>>>>> 459b9e5098a1e599e36b71fced1a40410788f782
 Fazer a chamada API One Call no openweathermap:
 
 const response = await axios(`https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&exclude=minutely,hourly,alerts&units=${this.UNITS}&appid=${this.API_KEY}`)
 
-Como resposta obterá timezone_offset": para que possa fazer um loop sobre a matriz daily para obter a data: const myDate = new Date(obj.dt*1000-(obj.timezone_offset*1000)));
+Como resposta obterá 'timezone_offset":
 
-Definir representação através de ícones
+para que possa fazer um loop sobre a matriz daily para obter a data:
+
+const myDate = new Date(obj.dt*1000-(obj.timezone_offset*1000)));
+
+Definir representação através de ícones;
 
 ## Project setup
 ```
