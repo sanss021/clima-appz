@@ -22,10 +22,11 @@ export default {
     },
     data() {
         return {
-            query: 'Munich',
-            submitted: 'Munich'
+            query: 'Rio de Janeiro',
+            submitted: 'Rio de Janeiro'
         }
     },
+
     methods: {
         async fetchLoc(e) {
             if(e.key === "Enter"){

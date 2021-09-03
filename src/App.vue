@@ -49,8 +49,8 @@ export default {
     return {
       API_KEY: '58577cd766eef6c99ef192cf7d0c3734',
       UNITS: 'metric',
-      LAT: '48.1351',
-      LON: '11.5820',
+      LAT: '-22.9028',
+      LON: '-43.2075',
       currentData: {},
       dailyData: [],
       timeData: {},
